@@ -1,3 +1,4 @@
 Quarkus guide: https://quarkus.io/guides/getting-started-testing
 
-# RUN DEV:wq
+# RUN DEV
+mvn clean compile quarkus:dev -Ddebug=5006
