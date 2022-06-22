@@ -24,4 +24,11 @@ public class GreetingResource {
     public String hello() {
         return "Test Quarkus\n";
     }
+    
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/data}")
+    public String dataJson() {
+        return "{ \"message\": \"Json MESSAGE\"}";
+    }
 }
